@@ -1,0 +1,263 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Modified Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.0 (07/04/2020)
+% 
+% Author
+% Apurv Mishra(https://apurvmishra.xyz)
+% Repository
+% https://github.com/apurvmishra99/Modified-Deedy-Resume
+% Original author of Deedy Resume:
+% Debarghya Das (http://debarghyadas.com)
+% His repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+%
+
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Sai Venkata Reddy}{Mallela}
+{ \urlstyle{same}\href{mailto:msvreddy77@gmail.com}{\bf msvreddy77@gamil.com} | \bf +91 9840375562 | \urlstyle{same}\href{https://github.com/Babloo007}{\bf Github} |
+\urlstyle{same}\href{https://www.linkedin.com/in/mallela-sai-venkata-reddy/}{\bf LinkedIn}} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.66\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\subsection{SRM University}
+\descript{Bachelor of Technology(B.Tech) Computer Science}
+\location{September \textbf{2015 } - \textbf{2019} | Chennai, India}
+\textbf{Classification: First Class}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{TATA Consultancy Services}
+\descript{| Software Engineer }
+\location{Apr \textbf{2021 } – Present | Bangalore, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item As a cloud engineer, worked on infrastructure provisioning tools like Terraform.
+\item Works on different AWS services for compute, network, content delivery,
+containers, serverless, storage, databases, monitoring.
+\item Developed invoice forms in multiple formats as per the client requirements in JnJ(Client) internal Application using HTML, CSS, JavaScript, java.
+\item Sets up Maven on Build servers, Tomcat on application servers, Jenkins on host servers.
+\item Generate invoice forms using java and pushing into GIT.
+\item Integrate Git with Jenkins, which triggers the Jenkins jobs.
+\item Integrate Jenkins with Maven plugins to build the pulled code from git.
+\item Write Docker files to generate docker containers in Docker hosts.
+\item Maintaining and bug-fixing on existing application and infrastructure.
+\item Responsible to create builds and deployments.
+\item Integrate Jenkins with Ansible to perform patches.
+\item Containers orchestration system for automating software deployment, scaling, and management using Kubernetes.
+\item Created branches, tags and managed/administrated GIT, GitHub.
+\item Deployed java application on web servers, such as Apache Tomcat
+\item The website been handling more than 1000 sessions/week without a problem.
+\end{tightemize}
+\sectionsep
+
+%\runsubsection{University of Edinburgh}
+%\descript{| Teaching Support }
+%\location{Sep \textbf{2019 } – Present | Edinburgh, UK}
+%\begin{tightemize}
+%\item Teach Introduction to Haskell, Intro to Linux, Cognitive Science, Computation and Logic and general programming concepts to a cohort of over 400 students.
+%\item Marked and assisted in conduction of the exam. 
+%\end{tightemize}
+%\sectionsep
+
+%\runsubsection{WorldQuant LLC}
+%\descript{| Research Consultant}
+%\location{Jun \textbf{2019 } - Oct \textbf{2019 } | Remote}
+%\begin{tightemize}
+%\item Selected to be a part of the research consultant programme after breaking into the top 1 percentile of participants of the WorldQuant challenge.
+%\item Created algorithm-based models using Python and propriety libraries that seek to predict movements of global financial markets.
+%\end{tightemize}
+%\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{TextConvert}
+\descript{| Java, HTML, CSS, JavaScript, AWS Cloud}
+\location{MAR \textbf{2019 }}
+\begin{tightemize}
+\item TextConvert is a web application used to convert the one format of text to another format.
+\item Researched and found multiple third party APIs to accomplish our objectives and integrated it into our application by building a pipeline to move information efficiently.
+\item The whole end to end solution is deployed on the AWS cloud and can be accessed on any social messaging service. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{BudgetStream}
+\descript{| Automation Anywhere, AWS, AWS Management Console, Gmail}
+\location{Apr \textbf{2020 }}
+\begin{tightemize}
+\item BudgetStream is a real time budget monitoring service bot along with an analysis and reference platform.
+\item Fetch the AWS Budgets data from my personal AWS Account.
+\item Bot triggers every day 8PM IST checks if any active services running on AWS Management Console sends a mail.
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{\textbf{Over 5000 lines:}}
+Java \textbullet{} C \textbullet{} Terraform \\
+\location{\textbf{Over 1000 lines:}}
+Docker \textbullet{} HTML \textbullet{} CSS \textbullet{} Oracle SQL\\
+Python \textbullet{} JavaScript\\
+\location{\textbf{Familiar:}}
+Java \textbullet{} Data Structures \textbullet{}SQL \textbullet{} Shell
+\subsection{VCS \& Build Tools}
+Git \textbullet{} Maven \textbullet{}Jenkins \textbullet{} Github Actions
+\subsection{Cloud Services}
+%\location{\textbf{Familiar:}}
+AWS EC2 \textbullet{} AWS CodePipeLines \textbullet{} AWS IAM \textbullet{} AWS VPC %\textbullet{}
+\subsection{Monitoring}
+AWS Cloud Watch.
+\subsection{Containerization}
+Docker \textbullet{} Kubernetes.
+\subsection{Infra Provisioning}
+Terraform \textbullet{} AWS CloudFormation
+\subsection{Application Server}
+Apache Tomcat \textbullet{} Nginix
+\subsection{Operating System}
+Amazon Linux \textbullet{} Ubuntu \textbullet{} CentOS Windows
+\subsection{Code Editors}
+VS Code \textbullet{} Atom \textbullet{} Vim \textbullet{} Eclipse
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+
+\textbf{2021 } Best Team Award \\
+\textbf{2021 } TCS Gems Award \\
+\textbf{2019 } SciFreak Award\\
+\textbf{2018 } Oxford Math Day Olympiad\\
+%\textbf{2018 } Oxford Hack \\
+%\textbf{2018 } Glasgow Hack \\
+%\textbf{2017 } DPS Noida
+
+%\section{Travel \& Conference Grants}
+
+%\textbf{\$250 } ELC, Edinburgh \\
+%\textbf{\$250 } PenApps, Philadelphia \\
+%\textbf{\textsterling 150 } Algothon, London \\
+%\textbf{\texteuro 150 } CEE Hacks, Prague\\
+%\textbf{\texteuro 150 } DENEFF EE Hack, Berlin\\
+%\textbf{\texteuro 120 } HackUPC, Barcelona\\
+%\textbf{\textsterling 75  } Hack Cambridge \\
+%\textbf{\texteuro 75    } Junction, Helsinki
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\textbullet{} Full Stack by Scaler \\
+\textbullet{} HLD \& LLD \\
+\textbullet{} Algorithms and Data Structures \\
+\textbullet{} CI/CD Pipelines \\
+\textbullet{} Jenkins \\
+\textbullet{} Linux \\
+\textbullet{} Shell Scripting \\
+%Software Testing \\
+%Computer Simulation \\
+%Functional Programming \\
+\textbullet{} OOPS Programming \\
+%Software Engineering \\
+%Numerical Computation \\
+%Linear Algebra \\
+%Discrete Mathematics 
+
+
+\section{Activities}
+Competitive coding \\
+Freelancing \\
+Curious Coding Community \\
+University Code Society \\
+Rotary Club \\
+NSS \\
+
+\end{minipage}%
+\end{document}  
+\documentclass[]{article}
